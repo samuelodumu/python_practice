@@ -9,4 +9,4 @@ def fib(n):
         a, b = b, a+b
     print(result)
         
-fib(200)
+fib(500)
