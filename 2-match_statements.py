@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+# This won't work on the terminal because match statements
+# were introduced in python version 3.10 and higher but the 
+# version on the sandbox is python 3.8.10
+
 def http_error(status):
     match status:
         case 400:
