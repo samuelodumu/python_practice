@@ -8,5 +8,8 @@ def fib(n):
         result.append(a)
         a, b = b, a+b
     print(result)
-        
-fib(500)
+
+if __name__ == '__main__':
+    import sys
+    fib(int(sys.argv[1]))
+
