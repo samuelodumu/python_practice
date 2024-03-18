@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+# every object refers to its class via the self.__class__ attribute
 class Robot():
     """Represents a robot, with a name."""
 
