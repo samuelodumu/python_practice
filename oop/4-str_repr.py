@@ -6,14 +6,16 @@ class Robot:
         self.by = build_year
     def __repr__(self):
         return f"Robot('{self.name}', {self.by})"
+    def __str__(self):
+        return f"Name: {self.name}, Build Year: {self.by}"
 
 if __name__ == "__main__":
     x = Robot("Dame", 1956)
     x_str = str(x)
-    print(x_str)
-    print(f"Type of x_str: {type(x_str)}")
-    new = eval(x_str)
-    print(f"Type of new 'eval(x_str)': {type(new)}")
+    x_repr = repr(x)
+    print(x_repr, type(x_repr))
+    new = eval(x_repr)
+    print(f"Type of new 'eval(x_repr)': {type(new)}")
 
     print(getattr(x, "energy", 100))
     print(x.__dict__)
