@@ -1,20 +1,27 @@
 #!/usr/bin/python3
 
-class Person:
-    def __init__(self, name = None, age = None):
-        self.name = name
-        self.age = age
+class Car:
 
-    def set_details(self, name, age):
-        self.name = name
-        self.age = age
+    countCars = 0
+    def __init__(self, brand, model, color, weight):
+        print(f"This is a {color} {brand} {model}")
+        self.brand = brand
+        self.model =  model
+        self.color = color
+        self.weight = weight
+        countCars += 1
 
-    def get_details(self):
-        return f'person name is {self.name} and person age is {self.age}'
+    def drive(self):
+        print(f"driving the {self.brand} {self.model} now...")
 
-p1 = Person()
-p1.set_details("George", 50)
-print(p1.get_details())
-p1.name = "evans"
-print(p1.__dict__)
-print(p1.__dir__())
+    def getprice(self, discount=1):
+        print(f"The price of the {self.brand} {self.model} is ${self.weight * 100 * discount}")
+
+c1 = Car("Toyota", "Corolla", "Grey", 3239)
+c2 = Car("Vibe", "Pontiac", "Red", 9402)
+c3 = Car("Mercedes", "Benz", "White", 5889)
+c2.drive()
+c3.getprice(0.9)
+print(f"")Car.countCars
+
+# print(c1.__dir__())
