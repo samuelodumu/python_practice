@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 class SchoolMember():
-    """Remember members of the school"""
+    """Represents members of the school"""
     def __init__(self, name, age):
         self.name = name
         self.age = age
