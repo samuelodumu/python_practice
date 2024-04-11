@@ -4,7 +4,7 @@
 # you may think of it as the object’s address in memory. The ‘is’ operator compares the identity of two objects;
 # the id() function returns an integer representing its identity
 # Since strings are immutable, Python optimizes resources by making two names that refer to the same string value refer to the same object.
-# This holds true for almost all immutable data excluding the tuple, set (not frozenset), long strings and integers outside the range -5 to 256
+# This holds true for almost all immutable data excluding the tuple, long strings and integers outside the range -5 to 256
 
 dee = ("1864-10-23", ["poetry, pretend-fight"])
 dum = ("1864-10-23", ["poetry, pretend-fight"])
