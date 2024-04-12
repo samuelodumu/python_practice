@@ -1,0 +1,9 @@
+This is an example text file that tests the module example
+First import ``factorial`` from the ``example`` module:
+
+	>>> from example import factorial
+
+Now use it:
+
+	>>> factorial(4)
+	120
