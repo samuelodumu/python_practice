@@ -11,16 +11,16 @@ def factorial(n):
     [1, 1, 2, 6, 24, 120]
 
     >>> factorial(-2)
-    Taceback (most recent call last):
+    Traceback (most recent call last):
         ...
     ValueError: n must be >= 0
-    
+
     Floats are ok, but the float must be an exact integer:
     >>> factorial(5.1)
-    Taceback (most recent call last):
+    Traceback (most recent call last):
         ...
-    ValueError: n must be an exact integer
-    
+    ValueError: n must be exact integer
+
     >>> factorial(1e100)
     Traceback (most recent call last):
         ...
@@ -30,8 +30,8 @@ def factorial(n):
     if not n >= 0:
         raise ValueError("n must be >= 0")
     if math.floor(n) != n:
-        raise ValueError("n must be an exact integer")
-    if n == n + 1:
+        raise ValueError("n must be exact integer")
+    if n + 1 == n:
         raise OverflowError("n is too large")
     result = 1
     factor = 2
