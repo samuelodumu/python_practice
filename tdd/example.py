@@ -4,6 +4,15 @@
 >>> factorial(6)
 720
 """
+__test__ = {
+        'numbers': """
+        >>> factorial(6)
+        720
+
+        >>> [factorial(n) for n in range(6)]
+        [1, 1, 2, 6, 24, 120]
+        """
+        }
 
 def factorial(n):
     """Returns the factorial of a n, an exact integer >= 0
