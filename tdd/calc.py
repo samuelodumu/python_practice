@@ -22,3 +22,5 @@ def add_num(a, b):
 def main():
     num = add_num(23.4, 50)
     print(num)
+    num2 = add_num(10, num)
+    print(num2)
