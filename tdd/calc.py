@@ -9,13 +9,21 @@ def add_num(a, b):
     34
     >>> add_num(2.5, 2)
     4.5
-    >>> add_num('a', 42)
-    Traceback (most recent call last)
+    >>> add_num('x', 42)
+    Traceback (most recent call last):
         ...
-    TypeError("Number must be an integer")
+    TypeError: a must be an int or float
+    
+    >>> add_num(5, True)
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an int or float
+
     """
-    if not isinstance(any(x for x in a, b), float):
-        raise TypeError("Number must be an integer")
+    if type(a) not in [int, float]:
+        raise TypeError("a must be an int or float")
+    if type(b) not in [int, float]:
+        raise TypeError("b must be an int or float")
     result = a + b
     return result
 
@@ -24,3 +32,5 @@ def main():
     print(num)
     num2 = add_num(10, num)
     print(num2)
+
+main()
