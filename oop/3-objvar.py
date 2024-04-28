@@ -36,11 +36,16 @@ class Robot():
         print(f"There are {cls.population} robots active")
 
 
+"""
 droid1 = Robot('DR 47')
 droid2 = Robot('APA 1')
-droid3 = Robot('007')
+droid3 = Robot('JB 007')
 
 Robot.how_many()
 droid1.say_hi()
 droid1.kill_bot()
+droid3.kill_bot()
+droid4 = Robot('Arian')
 Robot.how_many()
+"""
+help(Robot)

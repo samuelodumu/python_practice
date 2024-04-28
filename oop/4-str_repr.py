@@ -16,7 +16,9 @@ if __name__ == "__main__":
     print(x_repr, type(x_repr))
     new = eval(x_repr)
     print(f"Type of new 'eval(x_repr)': {type(new)}")
-
-    print(getattr(x, "energy", 100))
+    # gettatr retrieves the attribute from an object, in this case 'energy' from 'x'. 
+    # If the attribute doesn't exist it raises an error except a third parameter is 
+    # specified which would be printed instead.
+    print(getattr(x, "energy", 'energy is not an attribute in x'))
     print(x.__dict__)
     print(Robot.__dict__)
